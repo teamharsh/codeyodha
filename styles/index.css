@@ -47,6 +47,7 @@ body {
 }
 .page1 > nav > h3 {
   font-weight: 400;
+  font-weight: 50px;
 }
 
 .detail > h2 {
@@ -66,6 +67,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text; /* For some browser compatibility */
   color: transparent;
+  margin: 0;
 }
 
 .detail > img {
@@ -135,16 +137,7 @@ body {
   text-align: center;
 }
 =======
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
- line-height: 1.5;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-*{
- margin:0;
- padding:0;
- box-sizing: border-box;
-}
+
 .container_footer{
  max-width: 1170px;
  margin:auto;
