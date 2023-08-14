@@ -4,6 +4,8 @@ const form = document.querySelector('form');
   (pField = form.querySelector('.password')),
   (pInput = pField.querySelector('input'));
 
+  let login = document.querySelector('a');
+
 form.onsubmit = (e) => {
   e.preventDefault(); //preventing from form submitting
   //if email and password is blank then add shake class in it else call specified function
@@ -66,8 +68,8 @@ form.onsubmit = (e) => {
 
 function checkAdmin() {
   if (eInput === '' || pField === '') {
-    return;
-  } else {
-    window.open();
-  }
+    login.innerHTML = `
+    <a href="#" onclick="checkAdmin()">Login</a>
+    `;
+  } 
 }

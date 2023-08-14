@@ -48,6 +48,18 @@ body {
 .page1 > nav > h3 {
   font-weight: 400;
   font-weight: 50px;
+
+}
+
+.page1 > nav > h3 > a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 80px;
+}
+
+.page1 > nav > button>a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .detail > h2 {
@@ -95,7 +107,15 @@ body {
 
 .page2 {
   position: relative;
-  height: 165vh;
+  height: 175vh;
+  width: 100vw;
+  background-color: #fff;
+  padding: 10% 10%;
+}
+
+.page3 {
+  position: relative;
+  height: 100vh;
   width: 100vw;
   background-color: #fff;
   padding: 10% 10%;
@@ -103,6 +123,19 @@ body {
 
 .page2 > h1 {
   margin-top: 20px;
+}
+.page3 > h1 {
+  margin-top: 20px;
+}
+
+.picture{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+
+}
+.picture>img{
+  margin-top: 4%;
 }
 
 .upcoming_events {
