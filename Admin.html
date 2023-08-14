@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form validation in HTML & CSS | CodingNepal</title>
+    <link rel="stylesheet" href="styles/adminPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+   <body class="login">
+    <div class="container">
+        <h2 class="text-center">Login</h2>
+        <br>
+       
+            <div class="input-group">
+                <label for="username" class="label">Username</label>
+                <input type="text" id="username" class="input">
+                <span class="error-message"></span>
+            </div>
+            <br>
+            <div class="input-group">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input">
+                <span class="error-message"></span>
+            </div>
+            <br>
+            <button class="button" onclick="handlcheck()">Sign Up</button>
+            
+      
+    </div>
+
+    <script src="./js/loginPage.js"></script>
+  </body>
+</html>
