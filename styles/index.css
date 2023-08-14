@@ -10,6 +10,7 @@ body {
   width: 100%;
 }
 
+
 #main {
   position: relative;
   overflow: hidden;
@@ -77,9 +78,24 @@ body {
   margin-left: 20vw;
 }
 
+.img{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.text > p{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text > h3{
+  color: purple;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .page2 {
   position: relative;
-  height: 100vh;
+  height: 165vh;
   width: 100vw;
   background-color: #fff;
   padding: 10% 10%;
@@ -91,8 +107,9 @@ body {
 
 .upcoming_events {
   position: relative;
-  width: 50%;
+  width: 49%;
 }
+
 
 .event_img {
   margin-top: 10%;
@@ -102,15 +119,19 @@ body {
   height: auto;
 }
 
+
 .overlay {
   position: absolute;
   bottom: 0;
+  margin-top: 10%;
+  border-radius: 20px;
   left: 0;
   right: 0;
+  top: 0;
   background-color: #008bba1f;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 87%;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -123,6 +144,20 @@ body {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
+/*responsive*/
+@media (max-width: 767px) {
+  .upcoming_events {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .upcoming_events {
+    width: 100%;
+  }
+}
+
 
 .text {
   color: #fff;
