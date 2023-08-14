@@ -1,17 +1,47 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles/adminPage.css" />
-    <script defer src="js/loginPage.js"></script>
-    <script defer src="js/loginPage.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   </head>
   <body>
+    <h1>Event Management Dashboard</h1>
     <div class="container">
-      <h1 class="text-center">Welcome to the Dashboard</h1>
-      <p class="text-center"><a href="#" class="logout">Log Out</a></p>
+      <div class="left">
+        <form id="form">
+          <label for="">Add New Event Here:- </label>
+          <br /><br />
+          <textarea name="" id="input" cols="30" rows="10"></textarea>
+          <br /><br />
+          <div id="msg"></div>
+          <button type="submit">ADD</button>
+        </form>
+      </div>
+      <div class="right">
+        <h3>Your events are here</h3>
+        <div id="posts">
+          <div>
+            <p>Independence Day on 15th August</p>
+            <span class="options">
+              <i onClick="editPost(this)" class="fas fa-edit"></i>
+              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+            </span>
+          </div>
+          <div>
+            <p>Hackathon on 13th-14th August</p>
+            <span class="options">
+              <i onClick="editPost(this)" class="fas fa-edit"></i>
+              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="./js/dasboard.js"></script>
   </body>
 </html>
