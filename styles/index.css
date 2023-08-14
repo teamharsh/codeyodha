@@ -46,6 +46,7 @@ body {
 }
 .page1 > nav > h3 {
   font-weight: 400;
+  font-weight: 50px;
 }
 
 .detail > h2 {
@@ -65,6 +66,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text; /* For some browser compatibility */
   color: transparent;
+  margin: 0;
 }
 
 .detail > img {
