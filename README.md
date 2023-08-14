@@ -1,5 +1,7 @@
 # HACKATHON
 
+<h3> TEAM MAME : TEAM-PARALLEX</h3>
+
 ## Web Development
 
 ## Table of contents
@@ -13,7 +15,7 @@
 
 ## Overview
 
-This is project in which is made up by using HTML , CSS , JS . 
+This is project in which is made up by using HTML , CSS , JS by TEAM-PARALLAX . 
 
 ### Links
 
