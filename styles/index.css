@@ -1,0 +1,135 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+.page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  background-image: url(../images/home_page.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page1 > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 7vh;
+  width: 50vw;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+.page1 > nav > button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: #000;
+}
+.page1 > nav > h3 {
+  font-weight: 400;
+}
+
+.detail > h2 {
+  position: relative;
+  padding-left: 20vw;
+  color: #000;
+  font-size: 30px;
+}
+
+.detail h3 {
+  padding: 30vh 0 0 20vw;
+  font-size: 50px;
+}
+
+#freedom {
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text; /* For some browser compatibility */
+  color: transparent;
+}
+
+.detail > img {
+  height: 05vh;
+  width: 03vw;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 20vw;
+}
+
+.page2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  padding: 10% 10%;
+}
+
+.page2 > h1 {
+  margin-top: 20px;
+}
+
+.upcoming_events {
+  position: relative;
+  width: 50%;
+}
+
+.event_img {
+  margin-top: 10%;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008bba1f;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.upcoming_events:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
