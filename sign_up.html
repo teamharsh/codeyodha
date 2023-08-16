@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign_up</title>
+    <link rel="stylesheet" href="./styles/sign_up.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">SIGNUP PANEL</h1>
+      <div class="col">
+        <br />
+        <input type="text" class="form-control" id="name" placeholder="Name" />
+        <br />
+        <br />
+        <input
+          type="text"
+          class="form-control"
+          id="branch"
+          placeholder="Branch" /><br />
+        <br />
+        <input
+          type="text"
+          class="form-control"
+          id="batch"
+          placeholder="Batch" /><br />
+        <br />
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Email" /><br />
+        <br />
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Password" /><br />
+        <br />
+        <button type="button" onclick="signup()" class="form-control">
+          SignUp
+        </button>
+        <div class="popup" id="popup">
+          <img src="./images/accept.png" />
+          <h2>Thank you!</h2>
+          <p>
+            Your details has been successfully submitted :) Now you can login...
+          </p>
+          <button type="button"><a href="Admin.html">Login</a></button>
+          <button type="button" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/sign_up.js"></script>
+  </body>
+</html>
