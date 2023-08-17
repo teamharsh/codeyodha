@@ -82,7 +82,7 @@ body {
   margin: 0;
 }
 
-.detail > img {
+.detail > a > img {
   height: 05vh;
   width: 03vw;
   color: #fff;
@@ -115,7 +115,7 @@ body {
 
 .page3 {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   background-color: #fff;
   padding: 10% 10%;
@@ -124,6 +124,13 @@ body {
 .page2 > h1 {
   margin-top: 20px;
 }
+.page2 > p {
+  margin-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-style: oblique;
+}
+
 .page3 > h1 {
   margin-top: 20px;
 }
@@ -134,6 +141,8 @@ body {
   gap: 4%;
 
 }
+
+
 .picture>img{
   margin-top: 4%;
 }
