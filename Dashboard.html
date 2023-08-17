@@ -1,76 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>FREEDOM FEST-23</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- bootstrap link -->
+    <!-- (font of bootstrap) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <!-- css(home.js) link -->
     <link rel="stylesheet" href="./styles/dashboard.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="icon" href="./images/icon.jpeg" />
+      href="css/admin/eventManagement/eventManagement.css" />
   </head>
+
   <body>
-    <div class="main_body">
-      <div class="admin_details">
-        <h1>
-          Welcome
-          <script>
-            document.write(localStorage.getItem('name1'));
-          </script>
-        </h1>
-        <h2>
-          Branch:-
-          <script>
-            document.write(localStorage.getItem('branch1'));
-          </script>
-        </h2>
-        <h3>
-          Batch:-
-          <script>
-            document.write(localStorage.getItem('batch1'));
-          </script>
-        </h3>
-        <h3>
-          Email:-
-          <script>
-            document.write(localStorage.getItem('email1'));
-          </script>
-        </h3>
-      </div>
-      <div class="container">
-        <div class="left">
-          <h1>Event Management Dashboard</h1>
-          <form id="form">
-            <label for="">Add New Event Here:- </label>
-            <br /><br />
-            <textarea name="" id="input" cols="30" rows="10"></textarea>
-            <br /><br />
-            <div id="msg"></div>
-            <button type="submit">ADD</button>
-          </form>
+    <section class="section-a">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg_set">
+        <div class="container-fluid">
+          <a class="navbar-brands" href="index.html">Freedom Fest-23</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./events.html">Event</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="right">
-          <h3>Your events are here</h3>
-          <div id="posts">
-            <div class="details">
-              <p>Independence Day on 15th August</p>
-              <span class="options">
-                <i onClick="editPost(this)" class="fas fa-edit"></i>
-                <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-              </span>
+      </nav>
+    </section>
+
+    <section class="section-b">
+      <div class="container">
+        <div class="row">
+          <div class="row">
+            <div class="row heading">
+              <div class="header_container">
+                <div class="div-left"></div>
+                <div class="div-center text-center"><p>Add event</p></div>
+                <div class="div-right"></div>
+              </div>
             </div>
-            <div class="details">
-              <p>Hackathon on 13th-14th August</p>
-              <span class="options">
-                <i onClick="editPost(this)" class="fas fa-edit"></i>
-                <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-              </span>
+          </div>
+          <!-- form -->
+          <div class="row addEvent">
+            <div class="mb-3">
+              <label for="title" class="form-label">Event Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                aria-describedby="emailHelp"
+                placeholder="Event name" />
             </div>
+            <div class="mb-3">
+              <label for="location" class="form-label">Event Location</label>
+              <input
+                type="text"
+                class="form-control"
+                id="location"
+                placeholder="location" />
+            </div>
+
+            <div class="mb-3">
+              <label for="image" class="form-label">Image Link</label>
+              <input
+                type="text"
+                class="form-control"
+                id="image"
+                placeholder="image-link" />
+            </div>
+            <div class="mb-3">
+              <label for="venu" class="form-label">venue</label>
+              <input
+                type="text"
+                class="form-control"
+                id="venu"
+                placeholder="online or offline" />
+            </div>
+
+            <div class="mb-3">
+              <label for="lastDate" class="form-label">last date</label>
+              <input type="datetime-local" class="form-control" id="lastDate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="eventDate" class="form-label">event date</label>
+              <input type="date" class="form-control" id="eventDate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="category" class="form-label">category</label>
+              <input
+                type="text"
+                class="form-control"
+                id="category"
+                placeholder="tech,sports & cultural" />
+            </div>
+
+            <div class="mb-3">
+              <label for="fee" class="form-label">registration charge</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fee"
+                placeholder="fee" />
+            </div>
+
+            <button class="btn btn-danger" onclick="addEvent()">Add</button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="section-c pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="row">
+            <div class="row heading">
+              <div class="header_container">
+                <div class="div-left"></div>
+                <div class="div-center text-center"><h2>Event Data</h2></div>
+                <div class="div-right"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- data in table -->
+          <div class="row">
+            <input
+              type="text"
+              class="form-control searchEvent"
+              id="eventBox"
+              placeholder="Date,Category,Location" />
+
+            <table class="table table-dark table-striped tableDATA">
+              <thead>
+                <tr>
+                  <th scope="col">event name</th>
+                  <th scope="col">category</th>
+                  <th scope="col">date</th>
+                  <th scope="col">location</th>
+                  <th scope="col">venue</th>
+                  <th scope="col">fee</th>
+                  <th scope="col">Delete</th>
+                </tr>
+              </thead>
+              <tbody id="list">
+                <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <!-- script tag -->
+    <script src="js/home.js"></script>
     <script src="./js/dasboard.js"></script>
   </body>
 </html>
+
+<!-- git init
+git add .
+git commit -m "first commit"
+git push origin main 
+-->

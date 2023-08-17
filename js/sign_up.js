@@ -14,11 +14,11 @@ function signup() {
   ) {
     alert('Please Fill the Form properly');
   } else {
-    localStorage.setItem('name2', name);
-    localStorage.setItem('branch2', branch);
-    localStorage.setItem('batch2', batch);
-    localStorage.setItem('email2', email);
-    localStorage.setItem('password2', password);
+    localStorage.setItem('name1', name);
+    localStorage.setItem('branch1', branch);
+    localStorage.setItem('batch1', batch);
+    localStorage.setItem('email1', email);
+    localStorage.setItem('password1', password);
     openPopup();
   }
 }

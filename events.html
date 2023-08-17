@@ -1,118 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>FREEDOM FEST-23</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
+
+    <!-- bootstrap link -->
+    <!-- (font of bootstrap) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <!-- css(home.js) link -->
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="./styles/events.css" />
-    <link rel="icon" href="./images/icon.jpeg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body>
-    <h2 class="header"><a href="index.html"><i class="fa fa-caret-left" style="font-size:24px"></i></a> Events</h2>
+    <!-- header -->
+    <section class="section-a">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg_set">
+        <div class="container-fluid">
+          <a class="navbar-brands" href="index.html">Freedom Fest-23</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./events.html">Event</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-    <input
-    type="text"
-      id="myInput"
-      onkeyup="myFunction()"
-      placeholder="Search for names.."
-      title="Type in a name" />
+    <section class="section-b">
+      <div class="container-fluid">
+        <div class="row search_filter">
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              id="eventBoxFilter"
+              placeholder="Date,Category,Location" />
+          </div>
+        </div>
 
-    <ul id="myUL">
-      <li>
-        <div class="event">
-          <img src="./images/arm-wrestling.jpg" alt="" />
-          <a href="Arm Wrestling.html">Arm Wrestling</a>
-        </div>
-      </li>
-      <li>
-        <div class="event">
-          <img src="./images/div1.jpg" alt="Hackathon" />
-          <a href="Hackathon.html">Hackathon</a>
-        </div>
-        </li>
-        
-      <li>
-        <div class="event">
-          <img src="./images/startup.jpg" alt="Startup" srcset="" />
-          <a href="startUp.html">
-            Start UP
-          </a>
-        </div>
-      </li>
+        <div class="row">
+          <div class="row button_filter text-center my-5">
+            <div style="margin: auto">
+              <!-- button filter -->
+              <button
+                class="btn btn-danger button_filter_event mt-3"
+                onclick="technical()">
+                Technical Event
+              </button>
+              <button
+                class="btn btn-danger button_filter_event mt-3"
+                onclick="sport()">
+                Sport Event
+              </button>
+              <button
+                class="btn btn-danger button_filter_event mt-3"
+                onclick="cultural()">
+                Cultural Event
+              </button>
+              <button
+                class="btn btn-danger button_filter_event mt-3"
+                onclick="comingSoon()">
+                Coming Event
+              </button>
+              <button class="btn btn-danger button_filter_event mt-3">
+                More
+              </button>
+            </div>
+          </div>
+          <div class="row event_box tag_filter">
+            <div class="col-md-9" id="increseatsmall">
+              <div class="row justify-content-center" id="eventCard">
+                <!-- fetch data from event.js -->
 
-      <li>
-        <div class="event">
-          <img src="./images/chess.jpg" alt="" srcset="" />
-          <a href="Chess.html">
-            Chess
-          </a>
-        </div>
-      </li>
+                <!-- <div class="col-md-5 text-center g-0 border-outline pb-5">
+                <div class="image_conatiner">
+    <img src="images/home/about_check.jpg" alt="blind_coding">
+    <span id="dateOfEvant">registration open till date <b>12 AM, 2 mar 2023</b></span>
+                </div>
+                <div class="content_event">
+                    <h2>Unstops coder Blind coding</h2>
+    
+                    <span>start on <br> 3 mar 2023 </span>
+                    <span>Entry fee <br> 1000 </span>
+                    <span>Location <br> college campus</span>
+                    <span>Venue <br>Offline </span>
+                    
+    <br>
+    <button class="btn btn-danger mt-3">Registration</button>
+    <button class="btn btn-danger mt-3" onclick="share()">share</button>
 
-      <li>
-        <div class="event">
-          <img src="./images/quiz.jpg" alt="" />
-          <a href="Quiz.html">
-            Quiz
-          </a>
+                </div>
+               </div> -->
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
-      </li>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="section-f"></section>
 
-      <li>
-        <div class="event">
-          <img src="./images/photography.jpeg" alt="" />
-          <a href="Photography.html">
-          Photography
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="event">
-          <img src="./images/puzzle.jpeg" alt="" />
-          <a href="Puzzle.html">
-            Puzzle
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="event">
-          <img src="./images/Debate.jpg" alt="" />
-          <a href="Debate_competition.html">
-            Debate competition
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="event">
-          <img src="./images/flag.jpg" alt="flag" srcset="" />
-          <a href="Independence_Day.html">
-            Independence Day
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="event">
-          <img src="./images/rubiks.jpg" alt="" />
-          <a href="Rubik's_Cube.html">
-            Rubik's Cube
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="event">
-          <img src="./images/sudoku.jpg" alt="" />
-          <a href="Sudoku_puzzles.html">
-            Sudoku puzzles
-          </a>
-        </div>
-      </li>
-    </ul>
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <!-- script tag -->
+    <script src="js/home.js"></script>
     <script src="./js/events.js"></script>
   </body>
 </html>
+
+<!-- git init
+git add .
+git commit -m "first commit"
+git push origin main 
+-->

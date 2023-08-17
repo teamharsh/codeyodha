@@ -5,73 +5,14 @@ body {
   background-size: cover;
 }
 
-.main_body {
-  display: flex;
-
-  gap: 120px;
-  flex-wrap: wrap;
-  align-items: center;
+.btn {
+  background-color: rgb(83, 114, 240);
+  border: 1px solid rgb(83, 114, 240);
 }
 
-.container {
-  display: flex;
-  gap: 120px;
-  flex-wrap: wrap;
-}
-
-#posts {
-  width: 400px;
-}
-
-#posts div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.options {
-  display: flex;
-  gap: 25px;
-}
-
-i {
-  cursor: pointer;
-}
-
-#msg {
-  color: red;
-}
-
-textarea {
-  width: 50vw;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-}
-
-button {
-  padding: 20px;
-  border-radius: 20px;
-  border: none;
-  font-weight: bolder;
-}
-
-@media (min-width: 1024px) {
-  textarea {
-    width: 30vw;
-  }
-}
-
-.details {
-  width: 400px;
-  height: 40px;
-  background-color: aqua;
-  padding: 10px;
+h2 {
+  background-color: rgb(83, 114, 240);
   margin-top: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
+  color: #fff;
 }
