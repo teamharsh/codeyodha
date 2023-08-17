@@ -29,7 +29,7 @@ let acceptData = () => {
 
 let createPost = () => {
   posts.innerHTML += `
-     <div>
+    <div class ="details">
     <p>${data.text}</p>
     <span class="options">
       <i onClick="editPost(this)" class="fas fa-edit"></i>

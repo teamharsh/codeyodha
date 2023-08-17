@@ -1,13 +1,22 @@
 body {
   font-family: sans-serif;
-  margin: 0 50px;
+  margin: 0 0 0 20px;
   background-image: url(../images/bacgroundOfDashboard.jpg);
   background-size: cover;
 }
 
+.main_body {
+  display: flex;
+
+  gap: 120px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .container {
   display: flex;
-  gap: 50px;
+  gap: 120px;
+  flex-wrap: wrap;
 }
 
 #posts {
@@ -34,7 +43,7 @@ i {
 }
 
 textarea {
-  width: 100%;
+  width: 50vw;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -50,4 +59,19 @@ button {
   border-radius: 20px;
   border: none;
   font-weight: bolder;
+}
+
+@media (min-width: 1024px) {
+  textarea {
+    width: 30vw;
+  }
+}
+
+.details {
+  width: 400px;
+  height: 40px;
+  background-color: aqua;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
 }
