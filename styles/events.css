@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+h2{
+ color: brown;
+}
+
+.header{
+  text-decoration: none;
+}
+
 #myInput {
   background-position: 10px 12px;
   background-repeat: no-repeat;
@@ -27,11 +35,11 @@
 #myUL li a {
   border: 1px solid #ddd;
   margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
+  background-color: grey;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: white;
   text-align: center;
   display: block;
 }
@@ -48,5 +56,5 @@
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #eee;
+  background-color: black;
 }
