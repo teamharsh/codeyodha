@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(83, 114, 240);
+  color: #000;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  margin-left: 22.5%;
+  margin-top: 10px;
+  width: 50%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: 100px;
+}
+
+button > a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}

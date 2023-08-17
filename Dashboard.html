@@ -11,40 +11,62 @@
     <link rel="icon" href="./images/icon.jpeg" />
   </head>
   <body>
-    <h1>
-      Welcome
-      <script>
-        document.write(localStorage.getItem('name1'));
-      </script>
-    </h1>
-    <h1>Event Management Dashboard</h1>
-    <div class="container">
-      <div class="left">
-        <form id="form">
-          <label for="">Add New Event Here:- </label>
-          <br /><br />
-          <textarea name="" id="input" cols="30" rows="10"></textarea>
-          <br /><br />
-          <div id="msg"></div>
-          <button type="submit">ADD</button>
-        </form>
+    <div class="main_body">
+      <div class="admin_details">
+        <h1>
+          Welcome
+          <script>
+            document.write(localStorage.getItem('name1'));
+          </script>
+        </h1>
+        <h2>
+          Branch:-
+          <script>
+            document.write(localStorage.getItem('branch1'));
+          </script>
+        </h2>
+        <h3>
+          Batch:-
+          <script>
+            document.write(localStorage.getItem('batch1'));
+          </script>
+        </h3>
+        <h3>
+          Email:-
+          <script>
+            document.write(localStorage.getItem('email1'));
+          </script>
+        </h3>
       </div>
-      <div class="right">
-        <h3>Your events are here</h3>
-        <div id="posts">
-          <div>
-            <p>Independence Day on 15th August</p>
-            <span class="options">
-              <i onClick="editPost(this)" class="fas fa-edit"></i>
-              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-            </span>
-          </div>
-          <div>
-            <p>Hackathon on 13th-14th August</p>
-            <span class="options">
-              <i onClick="editPost(this)" class="fas fa-edit"></i>
-              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-            </span>
+      <div class="container">
+        <div class="left">
+          <h1>Event Management Dashboard</h1>
+          <form id="form">
+            <label for="">Add New Event Here:- </label>
+            <br /><br />
+            <textarea name="" id="input" cols="30" rows="10"></textarea>
+            <br /><br />
+            <div id="msg"></div>
+            <button type="submit">ADD</button>
+          </form>
+        </div>
+        <div class="right">
+          <h3>Your events are here</h3>
+          <div id="posts">
+            <div class="details">
+              <p>Independence Day on 15th August</p>
+              <span class="options">
+                <i onClick="editPost(this)" class="fas fa-edit"></i>
+                <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+              </span>
+            </div>
+            <div class="details">
+              <p>Hackathon on 13th-14th August</p>
+              <span class="options">
+                <i onClick="editPost(this)" class="fas fa-edit"></i>
+                <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+              </span>
+            </div>
           </div>
         </div>
       </div>
